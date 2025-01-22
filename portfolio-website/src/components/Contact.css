@@ -1,0 +1,68 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact {
+  background-color: #282c34;
+  color: #eee;
+  padding: 4rem 2rem;
+  text-align: center;
+  animation: fadeIn 1s ease-out;
+}
+
+.contact h2 {
+  color: #00a8e8;
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.contact input,
+.contact textarea {
+  padding: 0.8rem;
+  border: 1px solid #525252;
+  border-radius: 5px;
+  background-color: #393e46;
+  color: #eee;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: #00a8e8;
+  box-shadow: 0 0 5px rgba(0, 168, 232, 0.5);
+  outline: none;
+}
+
+.contact button {
+  padding: 0.8rem;
+  border: none;
+  background-color: #00a8e8;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #007ea7;
+  transform: scale(1.05);
+}
+
+.contact-info {
+  margin-top: 1.5rem;
+}

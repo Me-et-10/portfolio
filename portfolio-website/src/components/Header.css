@@ -1,0 +1,39 @@
+.hero {
+    background: linear-gradient(135deg, #0F2027, #203A43, #2C5364);
+    color: #e0e0e0;
+    text-align: center;
+    padding: 6rem 2rem;
+    box-shadow: 0 0 20px rgba(0, 77, 128, 0.5);
+    position: relative;
+    overflow: hidden;
+    opacity: 1; /* Ensure initial visibility */
+}
+
+.header-content {
+    opacity: 1; /* Ensure content is visible */
+    transform: translateY(0); /* Ensure content is in original position */
+    transition: all 0.8s ease-in-out;
+}
+
+/* Ensure text is visible */
+.header-content h1, 
+.header-content p {
+    color: #e0e0e0; /* Explicit color */
+    opacity: 1; /* Explicit opacity */
+}
+
+/* ... (Other header styles) */
+
+
+.header-content p {
+    font-size: 1.8rem; /* Larger subtitle */
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 20px rgba(0, 77, 128, 0.5);
+    }
+    to {
+        box-shadow: 0 0 30px rgba(0, 77, 128, 0.8);
+    }
+}

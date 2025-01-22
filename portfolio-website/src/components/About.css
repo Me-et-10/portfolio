@@ -1,0 +1,46 @@
+/* About.css */
+.about-content {
+  display: flex;              /* Use flexbox for layout */
+  align-items: center;        /* Vertically align items */
+  gap: 2rem;                  /* Add some spacing between image and text */
+  animation: fadeIn 1s ease-in-out; /* Add fade-in animation */
+}
+
+.profile-image {
+  width: 200px;               /* Adjust width as needed */
+  height: 200px;              /* Adjust height as needed */
+  overflow: hidden;           /* Prevents image overflow */
+  border-radius: 50%;         /* Make image circular */
+  animation: bounceIn 1s ease-in-out; /* Add bounce-in animation */
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* Ensures image covers the entire area */
+}
+
+.about-text { /* Styles for the text container */
+  flex: 1;  /* Allows text to take up remaining space */
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
