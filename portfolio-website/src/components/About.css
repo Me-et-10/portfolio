@@ -4,11 +4,12 @@
   align-items: center;        /* Vertically align items */
   gap: 2rem;                  /* Add some spacing between image and text */
   animation: fadeIn 1s ease-in-out; /* Add fade-in animation */
+  flex-direction: column;     /* Stack items vertically on small screens */
 }
 
 .profile-image {
-  width: 200px;               /* Adjust width as needed */
-  height: 200px;              /* Adjust height as needed */
+  width: 150px;               /* Adjust width for smaller screens */
+  height: 150px;              /* Adjust height for smaller screens */
   overflow: hidden;           /* Prevents image overflow */
   border-radius: 50%;         /* Make image circular */
   animation: bounceIn 1s ease-in-out; /* Add bounce-in animation */
@@ -22,6 +23,7 @@
 
 .about-text { /* Styles for the text container */
   flex: 1;  /* Allows text to take up remaining space */
+  text-align: center; /* Center text on small screens */
 }
 
 /* Keyframes for animations */
@@ -42,5 +44,21 @@
   to {
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row; /* Arrange items horizontally on larger screens */
+  }
+
+  .profile-image {
+    width: 200px; /* Adjust width for larger screens */
+    height: 200px; /* Adjust height for larger screens */
+  }
+
+  .about-text {
+    text-align: left; /* Align text to the left on larger screens */
   }
 }

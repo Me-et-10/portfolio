@@ -53,3 +53,15 @@
 .navbar ul li:hover::after {
     width: 100%;
 }
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+}

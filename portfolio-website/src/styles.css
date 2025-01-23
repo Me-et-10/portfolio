@@ -6,9 +6,9 @@
 /* ... other root styles ... */
 
 * {
-    
     opacity: 1 !important; /* Ensure all elements are opaque */
-  }
+}
+
 /* Global Animation Keyframes */
 @keyframes fadeInUp {
     from {
@@ -38,16 +38,26 @@
     transform: translateY(0);
 }
 
-
 /* ... (rest of the styles.css) */
 
-
 * {
-  transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 /* Interactive Element Styles */
 .interactive-element:hover {
     transform: scale(1.05);  /* Subtle hover effect */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .section {
+        transition: all 0.5s ease-out; /* Faster transition on mobile */
+    }
+
+    .interactive-element:hover {
+        transform: none; /* Disable hover effect on mobile */
+        box-shadow: none; /* Disable shadow on mobile */
+    }
 }

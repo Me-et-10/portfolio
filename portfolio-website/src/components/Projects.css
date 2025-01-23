@@ -61,3 +61,20 @@
         transform: translateY(0);
     }
 }
+
+/* Media Queries for Mobile Optimization */
+@media (max-width: 600px) {
+    .projects {
+        padding: 2rem 1rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .project-card {
+        padding: 1rem;
+    }
+}

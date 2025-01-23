@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import './Header.css';
 import { smoothScroll } from '../main';
 import resume from '../assets/OPS resume.pdf';
+
 function Header() {
   useEffect(() => {
     console.log('Header component mounted');
@@ -19,7 +20,7 @@ function Header() {
           Meet Patankar
         </h1>
         <p>Aspiring Computer Scientist | Passionate Problem-Solver</p>
-        <a href={resume} download="Meet_Patankar_Resume.pdf">Download Resume</a> {/* Resume link */}
+        <a href={resume} download="Meet_Patankar_Resume.pdf" className="download-button">Download Resume</a> {/* Resume link */}
       </div>
     </header>
   );

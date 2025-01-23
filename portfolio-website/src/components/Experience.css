@@ -80,3 +80,58 @@
 .experience .btn:hover {
   background-color: #007bb5;
 }
+
+/* Media Queries for Mobile Optimization */
+@media (max-width: 768px) {
+  .experience {
+    padding: 2rem 1rem;
+  }
+
+  .experience h2 {
+    font-size: 2rem;
+  }
+
+  .experience-entry {
+    padding: 1rem;
+  }
+
+  .experience h3 {
+    font-size: 1.25rem;
+  }
+
+  .experience p {
+    font-size: 0.9rem;
+  }
+
+  .experience .btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .experience h2 {
+    font-size: 1.75rem;
+  }
+
+  .experience-entry {
+    padding: 0.8rem;
+  }
+
+  .experience h3 {
+    font-size: 1rem;
+  }
+
+  .experience p {
+    font-size: 0.8rem;
+  }
+
+  .experience .btn {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+  }
+}
