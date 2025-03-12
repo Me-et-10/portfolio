@@ -11,9 +11,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-        with:
-          args: --file=portfolio-website/src/package.json
-
+        
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
@@ -25,5 +23,7 @@ jobs:
 
       - name: Run Snyk Security Scan
         uses: snyk/actions/node@master
+        with:
+          args: --file=portfolio-website/src/package.json
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
