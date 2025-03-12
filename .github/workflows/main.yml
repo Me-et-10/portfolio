@@ -19,11 +19,11 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: portfolio-website/src
+        working-directory: portfolio-website
 
       - name: Run Snyk Security Scan
         uses: snyk/actions/node@master
         with:
-          args: --file=package.json
+          args: --file=portfolio-website/package.json
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
