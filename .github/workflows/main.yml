@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          args: --file=portfolio-website/src/package.json
 
       - name: Install Node.js
         uses: actions/setup-node@v3
