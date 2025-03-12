@@ -24,6 +24,6 @@ jobs:
       - name: Run Snyk Security Scan
         uses: snyk/actions/node@master
         with:
-          args: --file=src/package.json
+          args: --file=package.json
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
